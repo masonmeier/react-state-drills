@@ -15,20 +15,7 @@ class Accordion extends Component {
 
   handleButtonClick(e) {
     const button = e.target;
-
-    switch (button.innerText) {
-      case 'Section 1':
-        this.setState({section: 'Section 1'});
-        break;
-      case 'Section 2':
-        this.setState({section: 'Section 2'});
-        break;
-      case 'Section 3':
-        this.setState({section: 'Section 3'});
-        break;
-      default:
-        return;
-    }
+    this.setState({ section: button.innerText });
   }
 
   render() {
